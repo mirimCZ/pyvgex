@@ -12,7 +12,7 @@ if __name__ == "__main__":
                 lineSum = lineSum + clean
 
             avg = "0:" + str("%.2f" % (lineSum / 3)).zfill(5)
-
+            
             outputFile.write(avg + "\n")
             print avg
     outputFile.close()
