@@ -11,7 +11,14 @@ if __name__ == "__main__":
                 clean = float(time.replace("0:", ""))
                 lineSum = lineSum + clean
 
-            mySum = lineSum / 3
-            outputFile.write(str(mySum) + "\n")
+
+            avg = lineSum / 3
+            # fuck it
+            if (avg < 10):
+                mySum = "0:0" + str(avg)
+            else:
+                mySum = "0:" + str(avg)
+
+            outputFile.write(mySum + "\n")
             print mySum
     outputFile.close()
